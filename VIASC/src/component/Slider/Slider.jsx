@@ -21,40 +21,40 @@ export default class ImageSlider extends Component {
         <span className="text-[#DCA245] text-[28px] font-semibold">KHÁCH HÀNG TIÊU BIỂU</span>
         <Slider {...settings} className="mt-8">
           <div className="text-center">
-            <img src="/access/1.png" alt="Image 1" />
+            <img src="/access/1.png" alt="Image1" />
           </div>
           <div className="text-center">
-            <img src="/access/2.png" alt="Image 2" />
+            <img src="/access/2.png" alt="Image2" />
           </div>
           <div className="text-center">
-            <img src="/access/3.png" alt="Image 3" />
+            <img src="/access/3.png" alt="Image3" />
           </div>
           <div className="text-center">
-            <img src="/access/4.png" alt="Image 4" />
+            <img src="/access/4.png" alt="Image4" />
           </div>
           <div className="text-center">
-            <img src="/access/5 2.png" alt="Image 5" />
+            <img src="/access/5 2.png" alt="Image5" />
           </div>
           <div className="text-center">
-            <img src="/access/6.png" alt="Image 6" />
+            <img src="/access/6.png" alt="Image6" />
           </div>
           <div className="text-center">
-            <img src="/access/1.png" alt="Image 1" />
+            <img src="/access/1.png" alt="Image7" />
           </div>
           <div className="text-center">
-            <img src="/access/2.png" alt="Image 2" />
+            <img src="/access/2.png" alt="Image8" />
           </div>
           <div className="text-center">
-            <img src="/access/3.png" alt="Image 3" />
+            <img src="/access/3.png" alt="Image9" />
           </div>
           <div className="text-center">
-            <img src="/access/4.png" alt="Image 4" />
+            <img src="/access/4.png" alt="Image10" />
           </div>
           <div className="text-center">
-            <img src="/access/5 2.png" alt="Image 5" />
+            <img src="/access/5 2.png" alt="Image11" />
           </div>
           <div className="text-center">
-            <img src="/access/6.png" alt="Image 6" />
+            <img src="/access/6.png" alt="Image12" />
           </div>
         </Slider>
       </div>

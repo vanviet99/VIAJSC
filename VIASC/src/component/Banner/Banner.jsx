@@ -16,7 +16,7 @@ function Banner() {
     }
 
     const phonePattern = /(0[3|5|7|8|9])+([0-9]{8})\b/g;
-    const emailPattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+    const emailPattern = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/;
 
     if (!phonePattern.test(userName) && !emailPattern.test(userName)) {
       return message.error("Sai định dạng phone hoặc email", 2);

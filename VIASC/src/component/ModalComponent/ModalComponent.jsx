@@ -1,16 +1,14 @@
-import { useState } from "react";
-import { Modal, Button, Steps } from "antd";
+import { useEffect, useState } from "react";
+import { Modal, Button } from "antd";
 import "./step.css";
 import Stepone from "../Step/Stepone";
 import Steptow from "../Step/Steptow";
 import axios from "axios";
 import Stepthree from "../Step/Stepthree";
 import Stepfor from "../Step/Stepfor";
-const { Step } = Steps;
 
 function ModalComponent(props) {
   const {mainModalVisible,closeMainModall}= props
-  // const [mainModalVisible, setMainModalVisible] = useState(false);
   const [currentStep, setCurrentStep] = useState(0);
   const [phonemail, setPhonemail] = useState("");
   const [err, setErr] = useState("");
@@ -73,16 +71,34 @@ function ModalComponent(props) {
     },
   ];
 
-  const openMainModal = () => {
-    // setMainModalVisible(true);
-    setCurrentStep(0);
-  };
+  // const openMainModal = () => {
+  //   resetState();
+    
+  //   setCurrentStep(0);
+  // };
 
   const closeMainModal = () => {
     // setMainModalVisible(false);
     closeMainModall()
   };
-
+  
+  useEffect(() => {
+    // Reset state when the modal is opened
+    if (mainModalVisible) {
+      setCurrentStep(0);
+      setPhonemail("");
+      setErr("");
+      setOtp("");
+      setOtpChild(null);
+      setChekOtp(false);
+      setCheckcolor(true);
+      setDatathietlap({
+        password: "",
+        confirmPassword: "",
+      });
+      setPassFor("");
+    }
+  }, [mainModalVisible]);
   const nextStep = async () => {
     console.log(phonemail,'phonemail')
     if (currentStep === 0) {
@@ -92,7 +108,7 @@ function ModalComponent(props) {
         }
 
         const phonePattern = /(0[3|5|7|8|9])+([0-9]{8})\b/g;
-        const emailPattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+        const emailPattern = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/;
 
         if (!phonePattern.test(phonemail) && !emailPattern.test(phonemail)) {
           return setErr("Sai định dạng phone hoặc email");

@@ -19,7 +19,7 @@ function Stepthree(props) {
   useEffect(() => {
     if (err) {
       const timer = setTimeout(() => {
-        setErr(null)
+        setErr('')
       }, 2000);
 
       return () => clearTimeout(timer);
@@ -50,7 +50,7 @@ function Stepthree(props) {
           onChange={handleConfirmPasswordChange}
         ></Input.Password>
       </form>
-      {err && <p className="text-[red] text-center mt-3">{err}</p>}
+      {err.length >0 && <p className="text-[red] text-center mt-3">{err}</p>}
     </div>
   );
 }

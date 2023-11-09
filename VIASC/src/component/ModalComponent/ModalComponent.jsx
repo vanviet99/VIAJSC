@@ -84,6 +84,7 @@ function ModalComponent(props) {
   };
 
   const nextStep = async () => {
+    console.log(phonemail,'phonemail')
     if (currentStep === 0) {
       try {
         if (phonemail === "") {
@@ -210,6 +211,8 @@ function ModalComponent(props) {
       } catch (error) {
         setErr("lỗi Server");
       }
+    }if(currentStep ===3){
+      console.log('1111111')
     }
   };
 

@@ -30,7 +30,7 @@ function Steptow(props) {
   useEffect(() => {
     if (err) {
       const timer = setTimeout(() => {
-        setErr(null)
+        setErr('')
       }, 2000);
 
       return () => clearTimeout(timer);
@@ -153,9 +153,9 @@ function Steptow(props) {
           </Row>
         </div>
       </div>
-      {err.length > 0 ? (
+      {/* {err.length > 0 ? (
         <p style={{ marginTop: "10px", color: "red" }}>{err}</p>
-      ) : null}
+      ) : ''} */}
 
       {checkOtp ? null : (
         <div className="mt-4">

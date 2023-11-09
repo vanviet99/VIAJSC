@@ -1,0 +1,82 @@
+.setpone_lable{
+    color:  #191D23;
+
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 19px;
+}
+.stepone_span {
+    color: #000;
+text-align: center !important;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 19px;
+margin: 0 auto;
+margin-top: 10px;
+}
+label{
+    color: var(--neutral-800, #191D23);
+
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 19px; 
+}
+
+.steptow_otp{
+    color: var(--success-500, #10B981);
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 19px; 
+}
+.steptow_time{
+    color: var(--primary-600, #ECAD48);
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 21.6px; 
+}
+.step_input{
+    border-radius: 4px;
+border: 2px solid var(--neutral-100, #E7EAEE);
+background: #FFF;
+}
+
+.otp-input{
+    color: #10B981;
+    font-weight: 600;
+    text-align: center;
+    font-size: 18px;
+}
+.otp-input-check{
+    color: #ECAD48;
+    font-weight: 600;
+    text-align: center;
+    font-size: 18px;
+}
+.steptow_span{
+    color: var(--neutral-600, #4B5768);
+
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 21.6px; 
+}
+.steptow_span-span{
+    color: var(--secondary-600, #0079ED);
+
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 21.6px;
+cursor: pointer;
+}

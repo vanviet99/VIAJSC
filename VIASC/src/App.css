@@ -1,0 +1,9 @@
+body,label,h4 {
+  margin: 0;
+  font-family: 'Inter', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.ant-modal-content{
+  background-color: #f8f8f8f8;
+}

@@ -1,0 +1,77 @@
+.banner {
+    background-image: url('/public/access/Mask group.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 0;
+    background-color: white;
+    position: relative;
+    height: 430px;
+}
+
+.login_img{
+    position: absolute;
+    top:10px;
+    left: 0;
+}
+.login{
+    position: absolute;
+    top: 40%;
+    right: 33px;
+    transform: translateY(-50%);
+
+}
+.login-form{
+    border-radius: 4px;
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.10);
+    padding: 28px;
+}
+.login_input{
+    text-align: left;
+    margin-right: 20px;
+
+}
+.login-form > div >label{
+    font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 19px; 
+}
+.login-form input{
+    border-radius: 4px;
+border: 1px solid  #A0ABBB;
+background:  #FFF;
+}
+.login_headding{
+    text-align: left;
+    color: #FFF;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 21.6px;
+margin-bottom: 10px;
+}
+
+.login_action{
+    margin-top: 20px;
+    font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 21.6px; /* 120% */
+text-align: right;
+color: white;
+cursor: pointer;
+}
+.login_action:hover{
+    color: aqua;
+}
+
+@media screen and (min-width: 1600px) {
+   .banner{
+    height: 600px;
+   }
+  }
+  

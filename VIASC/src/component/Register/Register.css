@@ -1,0 +1,35 @@
+.register {
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 0px;
+    color: #DCA245;
+  }
+  
+  .register_notifi{
+    color:  #10B981;
+font-size: 28px;
+margin-top: 20px;
+font-style: normal;
+margin-bottom: 10px;
+font-weight: 600;
+line-height: 34px; 
+letter-spacing: -0.56px;
+  }
+  .register_content{
+    color: #000;
+text-align: center;
+margin-top: 10px;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 21.6px; 
+  }
+  .ant-modal-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px !important;
+    margin-bottom: 10px !important;
+  }

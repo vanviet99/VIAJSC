@@ -44,7 +44,7 @@ function ModalComponent(props) {
           setOtpChild={setOtpChild}
           otpchild={otpchild}
           err={err}
-          set={err}
+          setErr={setErr}
           checkOtp={checkOtp}
           setCheckcolor={setCheckcolor}
           checkcolor={checkcolor}

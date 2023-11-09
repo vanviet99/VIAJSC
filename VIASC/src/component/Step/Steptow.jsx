@@ -153,9 +153,9 @@ function Steptow(props) {
           </Row>
         </div>
       </div>
-      {/* {err.length > 0 ? (
+      {err.length > 0 ? (
         <p style={{ marginTop: "10px", color: "red" }}>{err}</p>
-      ) : ''} */}
+      ) : ''}
 
       {checkOtp ? null : (
         <div className="mt-4">
